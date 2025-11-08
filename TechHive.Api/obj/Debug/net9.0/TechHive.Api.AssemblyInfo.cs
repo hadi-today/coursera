@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechHive.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36c794cac7c2da38361708846e49c1b2493b811e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechHive.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechHive.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

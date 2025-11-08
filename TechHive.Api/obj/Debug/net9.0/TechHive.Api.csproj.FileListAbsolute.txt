@@ -42,3 +42,4 @@
 /Users/hadinouri/Projects/coursera/coursera/TechHive.Api/obj/Debug/net9.0/TechHive.Api.pdb
 /Users/hadinouri/Projects/coursera/coursera/TechHive.Api/obj/Debug/net9.0/TechHive.Api.genruntimeconfig.cache
 /Users/hadinouri/Projects/coursera/coursera/TechHive.Api/obj/Debug/net9.0/ref/TechHive.Api.dll
+/Users/hadinouri/Projects/coursera/coursera/TechHive.Api/obj/Debug/net9.0/TechHive.Api.sourcelink.json
