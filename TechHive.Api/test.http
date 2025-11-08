@@ -1,0 +1,33 @@
+@api_host = http://localhost:5066 
+
+
+GET {{api_host}}/test/public
+Content-Type: application/json
+
+###
+# 2. تست اندپوینت خطا (Error)
+# انتظار می‌رود: کد 500 Internal Server Error و پاسخ JSON خطا
+GET {{api_host}}/test/error
+Content-Type: application/json
+
+###
+# 3. تست اندپوینت امن (Secure) - بدون توکن
+# انتظار می‌رود: کد 401 Unauthorized چون توکنی ارسال نشده است
+GET {{api_host}}/test/secure
+Content-Type: application/json
+
+###
+# 4. تست اندپوینت امن (Secure) - با توکن نامعتبر
+# انتظار می‌رود: کد 401 Unauthorized چون توکن معتبر نیست
+GET {{api_host}}/test/secure
+Content-Type: application/json
+Authorization: Bearer an-invalid-token
+
+###
+# 5. تست اندپوینت امن (Secure) - با توکن معتبر (نمونه)
+# برای اجرای موفق این درخواست، باید یک توکن معتبر از سرور احراز هویت خود دریافت کرده و اینجا قرار دهید.
+# @jwt_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+#
+# GET {{api_host}}/test/secure
+# Content-Type: application/json
+# Authorization: Bearer {{jwt_token}}
